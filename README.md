@@ -13,6 +13,6 @@ Keep in mind that you'd need to have your own instructions component and add its
 
 #
 
-*To find your component's key, open Figma desktop app and run this in console: **figma.currentPage.selection[0].key**
+*To find your component's key, open Figma desktop app, select component, and run this in console: **figma.currentPage.selection[0].key**
 
 <img width="1145" alt="Screen Shot 2022-06-09 at 2 55 42 PM" src="https://user-images.githubusercontent.com/30293108/172923582-d5d54bc1-d1fb-437c-8ffb-a39d7b3e26ab.png">
