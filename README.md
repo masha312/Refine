@@ -1,40 +1,18 @@
-Below are the steps to get your plugin running. You can also find instructions at:
+This is source for Refine, a Figma plugin for Karat design team to quickly set up Figma files.
 
-  https://www.figma.com/plugin-docs/setup/
+* [Loom with plugin overview](https://www.loom.com/share/fb1b04cd19a84b799a2120c4e7420ca5)
+* [Link to plugin itself](https://www.figma.com/community/plugin/1109189187994466813/Refine)
 
-This plugin template uses Typescript and NPM, two standard tools in creating JavaScript applications.
+The plugin consists of two parts:
+1. Creating and naming pages
+2. Pulling in a notepad + instructions component to Getting Started page
 
-First, download Node.js which comes with NPM. This will allow you to install TypeScript and other
-libraries. You can find the download link here:
+You can use this code to create your own plugin. 
 
-  https://nodejs.org/en/download/
+Keep in mind that you'd need to have your own instructions component and add its key* to the code. In order for the plugin to work, the instructions component should live in your team's shared library.
 
-Next, install TypeScript using the command:
+#
 
-  npm install -g typescript
+*To find your component's key, open Figma desktop app and run this in console: **figma.currentPage.selection[0].key**
 
-Finally, in the directory of your plugin, get the latest type definitions for the plugin API by running:
-
-  npm install --save-dev @figma/plugin-typings
-
-If you are familiar with JavaScript, TypeScript will look very familiar. In fact, valid JavaScript code
-is already valid Typescript code.
-
-TypeScript adds type annotations to variables. This allows code editors such as Visual Studio Code
-to provide information about the Figma API while you are writing code, as well as help catch bugs
-you previously didn't notice.
-
-For more information, visit https://www.typescriptlang.org/
-
-Using TypeScript requires a compiler to convert TypeScript (code.ts) into JavaScript (code.js)
-for the browser to run.
-
-We recommend writing TypeScript code using Visual Studio code:
-
-1. Download Visual Studio Code if you haven't already: https://code.visualstudio.com/.
-2. Open this directory in Visual Studio Code.
-3. Compile TypeScript to JavaScript: Run the "Terminal > Run Build Task..." menu item,
-    then select "tsc: watch - tsconfig.json". You will have to do this again every time
-    you reopen Visual Studio Code.
-
-That's it! Visual Studio Code will regenerate the JavaScript file every time you save.
+<img width="1145" alt="Screen Shot 2022-06-09 at 2 55 42 PM" src="https://user-images.githubusercontent.com/30293108/172923582-d5d54bc1-d1fb-437c-8ffb-a39d7b3e26ab.png">
